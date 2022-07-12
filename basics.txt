@@ -1,0 +1,17 @@
+//a js library for building ui.
+//it was designed by jorden walke facebook.
+
+//react follows -
+//component based approach.
+// uses declarative approach (generally used by frameworks)  --> it means you dont know how its done its upto react.
+// dom updates are handled gracefully. resusable code
+
+
+
+react folder structure--
+
+index.js-----> sbse important
+index.css-> normal css
+robts.txt -> used in seo
+manifest.json->provides info in plain json.
+index.html-----> choona nhi h
