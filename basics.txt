@@ -15,3 +15,57 @@ index.css-> normal css
 robts.txt -> used in seo
 manifest.json->provides info in plain json.
 index.html-----> choona nhi h
+
+
+react redux
+
+The data in React always flows from parent to child components which makes it unidirectional
+
+one way is prop drilling in which we store data in root and pass it to consumer of data via props it is prop drilling.
+
+
+problem solved via context api
+
+in redux we store data in store(centralized) and components get data from data.
+
+The data in React always flows from parent to child components which makes it unidirectional
+
+ACTION         REDUCER
+What to do?    How to do?
+
+STORE          
+object which
+state of the application 
+
+Functions associated
+createStore()
+dispatch(action)
+getstate()
+
+
+Actions are plain JavaScript objects that have a type field
+Actions only tell what to do, but they don't tell how to do.
+
+Action Creator
+Pure function which creates an action
+
+Reducers are functions that take the current state and an action
+as arguments, and return a new state result.
+
+const initialState = 0;
+const change TheNumber = (state = initialState, action) => {
+switch (action.type) {
+case "INCREMENT": return state + action.payload;
+case "DECREMENT": return state - 1;
+default: return state;
+}
+}
+
+
+The Redux store brings together the state, actions, and reducers
+that make up your app.
+
+It's important to note that you'll only have a single store in a Redux
+application.
+
+every redux store has a single root reducer functions.
